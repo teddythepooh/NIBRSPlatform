@@ -1,0 +1,2 @@
+AWS_REGION = "us-east-2"
+S3_BUCKET_NAME = "ted-nibrs"

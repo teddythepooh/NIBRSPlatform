@@ -1,0 +1,7 @@
+.venv/
+.vscode/
+.terraform/
+output/
+.env
+terraform.tfstate
+terraform.tfstate.backup
