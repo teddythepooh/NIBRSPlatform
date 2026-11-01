@@ -1,6 +1,7 @@
 .venv/
 .vscode/
 .terraform/
+__pycache__/
 output/
 .env
 terraform.tfstate
