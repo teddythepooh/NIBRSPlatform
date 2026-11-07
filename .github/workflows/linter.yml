@@ -22,4 +22,4 @@ jobs:
 
       - name: Run linter
         run: |
-          ruff check . --exit-zero
+          uv run ruff check . --exit-zero
