@@ -64,7 +64,7 @@ class NIBRSDownload:
         '''
         years: Desired year(s) to download.
         
-        Downloads NIBRS master file for one or more years.
+        Downloads NIBRS master file.
         '''
         if isinstance(years, int):
             years = [years]

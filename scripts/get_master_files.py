@@ -7,7 +7,7 @@ def main(args: argparse.Namespace):
     Downloads NIBRS master files (.zip) from the FBI Crime Data Explorer (CDE).
     '''
     master_files = NIBRSDownload(output_dir = Path(args.output_dir))
-    master_files.get(years = args.year)
+    master_files.download(years = args.year)
     
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(
