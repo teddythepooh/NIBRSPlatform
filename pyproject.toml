@@ -3,11 +3,16 @@ name = "nibrs"
 version = "0.1.0"
 description = "NIBRS data platform."
 readme = "README.md"
-requires-python = ">=3.14,<3.15"
+requires-python = ">=3.10,<3.11"
 dependencies = [
+    "boto3==1.43.123",
     "fbi-data-api==1.0.1",
-    "polars==2.1.0",
+    "polars==2.0.0",
+    "pytest==9.2.0",
     "python-dotenv==1.2.4",
+    "python-hcl2==8.1.4",
+    "ruff==0.17.4",
+    "zipfile-deflate64==0.2.0",
 ]
 
 [build-system]
@@ -16,3 +21,19 @@ build-backend = "hatchling.build"
 
 [tool.hatch.build.targets.wheel]
 packages = ["src/"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+exclude = [
+    "__init__.py"
+]
+
+[tool.ruff.lint]
+select = [
+    "ERA001" # commented code
+    , "F401" # unused imports
+    , "D101" # missing docstrings (public class)
+    , "D102" # missing docstrings (public method)
+    , "D103" # missing docstrings (public function)
+]
