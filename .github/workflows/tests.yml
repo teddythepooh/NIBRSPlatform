@@ -1,4 +1,4 @@
-name: Run linter on merge to main
+name: Tests
 
 on:
   pull_request:
